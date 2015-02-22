@@ -1,0 +1,65 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cat Clicker MVC Premium Pro jsønp exploración tabla</title>
+<link href="css/boilerplate.css" rel="stylesheet" type="text/css">
+<link href="css/catClicker.css" rel="stylesheet" type="text/css">
+
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="js/respond.min.js"></script>
+</head>
+<body>
+	<div class="gridContainer clearfix">
+		<ul class="fluid" id="listadogatos"></ul>
+        <div class="fluid" id="cat">
+          <h3 class="fluid" id="catname"></h3>
+          <div class="fluid" id="counter"></div>
+          <img src="" class="fluid" id="catimage"  alt="cute cat">
+        </div>
+        <div id="contenedorseparacion1" class="fluid">
+          <hr>
+          <h3 class="fluid" id="title">Admin Panel</h3>
+          <button id="buttonAdmin" class="fluid">Admin</button>
+        </div>
+        <table id="contenedorAdmin">
+				<tr><td><div id="contieneformulario" class="fluid"></td><tr>
+                <tr><td><h3>Search items:</h3></td></tr>
+				<tr><td><form id="new-cat-form" class="new-cat-form">
+				  <div class="fluid" id="inputcatname">Cat Name:</div></td></tr>
+                    <tr><td><input type="text" id="new-cat-name"></td></tr>
+                    <tr><td><br></td></tr>
+                    <tr><td><div class="fluid" id="inputcatclicks">Cat Clicks:</div></td></tr>
+                    <tr><td><input type="text" id="new-cat-numclicks"></td></tr>
+                    <tr><td><br></td></tr>
+			        <tr><td><input type="button" value="Cancel" id="botoncancelar">
+                    <input type="button" value="Save" id="botonguardar"></td></tr>
+			   </form>
+               
+               </div>
+        </table>
+        <div id="contenedorseparacion2" class="fluid">
+          <hr>
+        </div>
+	</div>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
